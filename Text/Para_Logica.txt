@@ -1,0 +1,29 @@
+Para mejorar la lógica tengo que aprender los conceptos a continuación, con el objetivo de lograr llegar a la iteración
+donde "simulo", "monitoreo" y "mejoro".
+
+1. Para mejorar el criterio
+    1.1 Hablando sobre el modelo (Los 3 juezes): Bueno se busca hacer un cerebro + dos validadores. En este caso el cerbro se 
+        encarga de proponer las compras, un BOT que se encargue de avisar cuando una oprtunidad suena interesante (basado en 
+        lógica creada por uno mismo). Esta propuesta pasa por un filtro de validacion estadística donde veremos las probabilidades
+        basado en data historica y luego pasara por una validación IA entrenada con más datos historicos.  
+
+    1.2 Crear el criterio del cerebro: 
+        
+        1.2.1 RSI (Fuerzas de movimientos): 
+        1.2.2 Medias Moviles (Tendencia):
+
+Para la simulación es bueno probar de esta manera, tengo esta estrategia para esta semana y otra para la siguiente ¿si 
+hubiera usado esta estrategia la semana pasada hubiera ganado más que con la estrategia pasada? Como que ese será nuestro
+criterio.
+Los datos históricos no te dicen qué estrategia ganará, sino qué estrategias son una pérdida de tiempo.
+
+2. Para simular (Backtesting)
+    2.1 Predecir Datos Históricos(fetch_ohlcv)
+
+Para monitorear si el bot esta haciendo bien su trabajo o no debo hacer un monitereo basado en riesgos.
+
+3. Monitorear
+    3.1 Gestión de Riesgos
+
+
+

@@ -1,0 +1,24 @@
+Modelo basado en adaptación: 
+
+Un bot que se adapta es aquel que dice: "Si el mercado está tranquilo, un movimiento del 0.5% es importante. Pero si el mercado está loco, el 0.5% no significa nada y esperaré a un 2%".
+Para crear un cerebro que se adapte al cambio (sin predecir el futuro), estas son las 3 cosas que deberías aprender:
+    1. El concepto de Volatilidad (ATR - Average True Range):
+        Es la herramienta reina para adaptarse. El ATR te dice cuánto se mueve una moneda en promedio en un tiempo determinado.
+        Cómo se usa: En lugar de decirle a tu bot: "Avisame si sube 0.1%" (que es un número fijo), le dices: "Avisame si el precio se mueve más de 2 veces su promedio normal".
+        Resultado: Si la moneda se calma, el bot se vuelve más sensible. Si la moneda se agita, el bot se vuelve más "paciente".
+    2. Detección de Regímenes de Mercado
+        El mercado solo tiene dos estados: Tendencia (sube o baja con fuerza) o Rango (rebota de lado a lado como un ping-pong).
+        Qué aprender: Indicadores como el ADX o el Ancho de las Bandas de Bollinger.
+        Cómo se usa: Tu cerebro debe tener dos modos:
+        Modo Tendencia: "El precio rompió hacia arriba, voy a seguir la ola".
+        Modo Rango: "El precio llegó arriba, pero como estamos en rango, lo más probable es que caiga. No compro".
+    3. Aprendizaje por Refuerzo (Concepto básico)
+        No necesitas una IA compleja para esto. Puedes crear un sistema de "puntuación" en tu código:
+        Lógica: Si el bot da una alerta y el precio efectivamente sube, le da un "punto" a esa regla. Si falla, le resta un punto.
+        Adaptación: Si una regla empieza a perder muchos puntos (porque el mercado cambió), el bot simplemente deja de usar esa regla automáticamente hasta que el mercado vuelva a ser favorable para ella.
+
+Inverse-Reddit & Inverse - Jim Cramer
+
+Ambos tienen el objetivo de hacer lo contrario a lo que se recomienda, hay muchos casos en donde esto funciona
+como también hay casos en donde esto perece gravemente. De todas formas si se quisiera hacer de forma segura se podría
+plantear un sistema inverse preevaluado con un analisis de riesgo. Inverse + Riesgo.
