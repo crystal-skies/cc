@@ -9,7 +9,9 @@ donde "simulo", "monitoreo" y "mejoro".
 
     1.2 Crear el criterio del cerebro: 
         
-        1.2.1 RSI (Fuerzas de movimientos): 
+        1.2.1 RSI (Fuerzas de movimientos): El RSI sirve como un indicador de un posible rebote, si es menor a 30 significa
+        que es posible que surja un rebote osea hay una oprtunidad para ganar comprando o ganar vendiendo entonces el RSI tiene 
+        esa lógica de alerta pero es necesario saber el timing que compre después de confirmar un rebote y así.
         1.2.2 Medias Moviles (Tendencia):
 
 Para la simulación es bueno probar de esta manera, tengo esta estrategia para esta semana y otra para la siguiente ¿si 

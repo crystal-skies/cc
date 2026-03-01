@@ -1,0 +1,19 @@
+Monte Carlo: 
+En la simulación primero evaluamos con Monte Carlo. 
+Para evaluar con Monte Carlo primero necesitabamos los indicadores del ML, esto
+con el objetivo de usarlo en la simulación Monte Carlo y ver como se comportaban
+los números, la presición y las variables a las que le dimos importancia. 
+Monte Carlo luego nos da un resultado y nos dice que según mis números, todo 
+esta en orden o no. 
+
+Backtesting:
+Luego se hace Backtesting para ver que los números y el ML en acción, concuerden. 
+Por eso usamos el modelo en el Backtesting para ponerlo a evaluar 1000 casos, 
+estresarlo y ver si de verdad cumple con lo que Monte Carlo afirmó y con lo que
+decian las métricas que inicialmente nos dió después de ser entrenado.
+
+Entender los logs de Backtesting: 
+El bot ve exitos, entonces si tengo 20 y compro y luego sube y cierra vendiendose
+entonces gane, si por ejemplo vendo y el precio baja pero yo vendí justo antes de
+eso, entonces gané pero si no hubiera bajado y hubiera subido sería una perdida 
+pq el modelo no supo saber bien que en realidad iba a subir.

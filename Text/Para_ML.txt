@@ -1,0 +1,87 @@
+Meta-Labeling Model
+Se plantea un modelo de ML binario que se actualice semanalmente, 
+de manera que no se queda con data obsoleta y tampoco data muy nueva. 
+En un principio la ingesta será con datos historicos provinientes de 
+Binancia, datos de un año. 
+
+RSI detecta posible rebote
+Confirmas que dejó de caer
+ML decide si ese rebote tiene calidad o no
+
+Valiables de entrada:
+Volatilidad, Tendencia Superior, Volumen y Distancia de la media 200.
+(para entender los conceptos vease ML Explained al final de la hoja)
+
+Definición de Exito:
+Definimos exito si después de comprar alcanza primero +2% antes que un -1%.
+
+Triple Barrier Method
+Tenemos 2 casos de exito, el primero ya mencionado exito cuando al comprar 
+alcanza primero +2% antes que un -1%, y el segundo que es que al vender 
+alcanza primero -1% antes que un +2%.
+Y un caso base por así decirlo, la arrera de Tiempo: Si después de X velas 
+(ej. 24 horas) no se ha tocado ninguna barrera de precio, la señal se etiqueta
+como 0 (Fracaso/Neutral). Queremos que el Juez solo apruebe operaciones que se
+mueven rápido a nuestro favor.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ML Explained
+Volatilidad: 
+¿Está cayendo suave… o en pánico?(ATR mide qué tan grandes 
+son las velas últimamente).
+
+Tendencia Superior: 
+Entonces es algo como que estoy viendo 15 min constantemente, si mi 
+RSI me dice compra! porque acaba de bajar a menos de 30 en RSI y quiere 
+decir que según RSI habrá un rebote entonces el RSI me dice COMPRA! pasa
+por mi ML que revisa la Tendencia y la tendencia me dice NO, la tendencia
+dice que esta cayendo grande entonces es mejor no comprar porque seguro 
+que vuelve a caer
+
+Volumen:
+¿Cuánta gente está participando? 
+Mide cantidad de operaciones.
+Mucho volumen → mucha actividad
+Poco volumen → mercado dormido
+
+Caso 1: Precio baja fuerte -> Velas gigantes -> Volumen alto
+Movimiento real con fuerza (pánico)
+
+Caso 2: Precio baja fuerte -> Velas grandes -> Volumen bajo
+Movimiento sospechoso, puede ser manipulación
+
+Distancia a la Media 200:
+La media 200 es como el “precio normal”.
+Muy lejos por abajo → puede rebotar
+Muy lejos por arriba → puede corregir
+
+
+
+Definición de Exito:
+Se define exito cuando 

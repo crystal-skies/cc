@@ -1,18 +1,8 @@
 Estructura:
-exchange_handler.py: Función que descarga los precios.
-logic_engine.py: Memoria y las reglas de comparación.
-    La teoría:
-    Recibe el precio actual.
-    Busca el precio anterior en tu "memoria" (diccionario).
-    Calcula la diferencia porcentual: ((Actual - Anterior) / Anterior) * 100.
-    Guarda el precio actual como el "nuevo anterior" para la siguiente comparación.
-
-
-1. Conexión al exchange (CCXT)
-2. Estrategia técnica simple (sin IA aún)
-    2.1 Simular
-    2.2 Monitorear 
-    2.3 Mejorar 
-3. Gestión de riesgo
-4. Bucle principal
-5. Luego IA + dashboard
+1. Conexión al exchange 
+2. Contrucción Bot
+    2.1 Logica y Estrategia
+    2.2 Simulación
+    2.3 Automatización 
+    2.4 Escalar 
+3. Monitereo y Mantenimiento
